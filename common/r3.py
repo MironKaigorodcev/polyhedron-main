@@ -3,7 +3,7 @@ from math import sin, cos
 
 class R3:
     """ Вектор (точка) в R3 """
-    #написать функцию, вычисляющую длину вектора
+    # написать функцию, вычисляющую длину вектора
     # Конструктор
     def __init__(self, x, y, z):
         self.x, self.y, self.z = x, y, z
@@ -41,6 +41,7 @@ class R3:
             self.y * other.z - self.z * other.y,
             self.z * other.x - self.x * other.z,
             self.x * other.y - self.y * other.x)
+
 
 if __name__ == "__main__":
     x = R3(1.0, 1.0, 1.0)

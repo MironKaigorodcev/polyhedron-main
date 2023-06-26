@@ -117,8 +117,6 @@ class Facet:
             (1.0 / len(self.vertexes))
 
 
-
-
 class Polyedr:
     """ Полиэдр """
     # вектор проектирования
@@ -168,7 +166,7 @@ class Polyedr:
         tk.clean()
         for e in self.edges:
             for f in self.facets:
-                cent=f.center()
+                cent = f.center()
                 # Проверям, является ли центр грани хорошей точкой
                 if sqrt(cent.x ** 2 + cent.y ** 2 + cent.z ** 2) > 1:
                     # Находим сумму площадей проекций граней
@@ -184,7 +182,7 @@ class Polyedr:
         _area = 0.0
         norm = Polyedr.V * (1 / self.scale / self.scale)
         for f in self.facets:
-            cent=f.center()
+            cent = f.center()
             # Проверям, является ли центр грани хорошей точкой
             if sqrt(cent.x ** 2 + cent.y ** 2 + cent.z ** 2) > 1\
                     * self.scale:
