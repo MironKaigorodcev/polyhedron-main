@@ -10,6 +10,8 @@ tests = {
      "simple_small": 4,  # масштаб не влияет
      "tetrahedron": 4 / 3 * sqrt(3)
 }
+
+
 @mark.parametrize("name,answer", tests.items())
 def test_(name, answer):
     assert Polyedr(f"addiotional-data/{name}.geom").area() == approx(answer)

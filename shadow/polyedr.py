@@ -178,6 +178,7 @@ class Polyedr:
             for s in e.gaps:
                 tk.draw_line(e.r3(s.beg), e.r3(s.fin))
         return print("Сумма площадей проекций граней равна", area)
+
     def area(self):
         _area = 0.0
         norm = Polyedr.V * (1 / self.scale / self.scale)
